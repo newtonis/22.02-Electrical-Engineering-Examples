@@ -1,0 +1,9 @@
+-lenguaje interpretado (no se compila)
+-tuples
+-numeros ultra largos mientras me de la memoria
+-listas nativas
+-diccionarios nativos
+-todo es un objeto
+
+Filosofía de python 
+"hacer todo de una sola forma"
