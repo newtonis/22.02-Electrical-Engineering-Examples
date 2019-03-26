@@ -2,6 +2,7 @@
 
 # Al final de esta clase usted podrá:
 * Graficar respuesta transitorias de un circuito
+* Graficar diagramas fasoriales
 
 # Features for the future:
 * Resolver sistemas simbólicamente
