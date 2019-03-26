@@ -1,5 +1,6 @@
 -lenguaje interpretado (no se compila)
 -tuples
+-se pueden retornar varias variables
 -numeros ultra largos mientras me de la memoria
 -listas nativas
 -diccionarios nativos
@@ -7,3 +8,7 @@
 
 Filosofía de python 
 "hacer todo de una sola forma"
+
+Link donde se pueden ver cosas para hacer operaciones
+como combinatoria, factorial,etc
+https://docs.python.org/2/library/itertools.html
