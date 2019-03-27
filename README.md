@@ -1,11 +1,11 @@
 # Ejemplos programación en python (22.02 - Electrotecnia I)
 
 ## Propuestas de aplicaciones de python
-1. Resolución de sistemas de N ecuaciones con N incognitas
-2. Graficar respuesta transitoria de un circuito 
+* Resolución de sistemas de N ecuaciones con N incognitas
+* Graficar respuesta transitoria de un circuito 
 
-⋅⋅⋅ [ejemplo1_rc](ejemplo1_rc/ejemplo1_rc.py), 
-⋅⋅⋅ [ejemplo2_sobreamortiguado](ejemplo2_sobreamortiguado/ejemplo2_sobreamortiguado.py)
+> [ejemplo1_rc](ejemplo1_rc/ejemplo1_rc.py), 
+> [ejemplo2_sobreamortiguado](ejemplo2_sobreamortiguado/ejemplo2_sobreamortiguado.py)
 
 3. Graficar diagramas fasoriales, manejo de números complejos
 ⋅⋅* [ejemplo3_fasores/ej1.py](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/ejemplo3_fasores/ej1.py),
