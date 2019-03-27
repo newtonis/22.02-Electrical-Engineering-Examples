@@ -8,8 +8,8 @@
 [ejemplo2_sobreamortiguado](ejemplo2_sobreamortiguado/ejemplo2_sobreamortiguado.py)
 
 3. Graficar diagramas fasoriales, manejo de números complejos
-⋅⋅* [ejemplo3_fasores/ej1.py](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/ejemplo3_fasores/ej1.py),
-⋅⋅* [ejemplo3_fasores/ej2.py](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/ejemplo3_fasores/ej2.py)
+>  [ejemplo3_fasores/ej1.py](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/ejemplo3_fasores/ej1.py) <br/>
+[ejemplo3_fasores/ej2.py](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/ejemplo3_fasores/ej2.py)
 
 ## Sugerencias de funcionalidades más avanzadas
 * Sobrecarga de operadores
