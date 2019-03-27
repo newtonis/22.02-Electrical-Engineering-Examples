@@ -26,8 +26,8 @@ Z1 = R
 Z2 = 1/(s*C)
 Z3 = s*L
 
-V1 = rect(14.1,radians(0))
-UC1 =  V1 *( Z2*Z3/(Z2+Z3))/((Z2*Z3/(Z2+Z3))+Z1)
+V1 = rect(14.1, radians(0))
+UC1 = V1*( Z2*Z3/(Z2+Z3))/((Z2*Z3/(Z2+Z3))+Z1)
 I1 = rect(1.41, pi/2)
 UC2 = I1 * Z2 * (Z1*Z3/(Z1+Z3))/((Z1*Z3/(Z1+Z3))+Z2)
 
