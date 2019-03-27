@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from plotFasor import *
 
+## variables del problema
 ifuente = 5
 w = 2
 
@@ -20,10 +21,11 @@ z2 = r2 + zc
 i1 = ifuente * z2 / (z1 + z2)
 i2 = ifuente * z1 / (z1 + z2)
 
+## corrientes complejas
 print("i1 = ", printComplex(i1))
 print("i2 = ", printComplex(i2))
 
-
+## cuenterio
 vfuente = -ifuente * (paralell(r1 + zl, r2 + zc) + 2)
 
 sfuente = vfuente * conj(ifuente)
@@ -46,12 +48,13 @@ sc = vc * conj(i2)
 
 ax = plt.subplot(111, projection='polar')
 
+## dibujamos las potencias complejas
+
 drawLine(sr0, "r", "R0")
 drawLine(sr1, "g", "R1")
 drawLine(sr2, "b", "R2")
 drawLine(sl, "c", "L")
 drawLine(sc, "m", "C")
-
 drawLine(sfuente, "y", "F")
 
 print("sr0 = ", printComplex(sr0))

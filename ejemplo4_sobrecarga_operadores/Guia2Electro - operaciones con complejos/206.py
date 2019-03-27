@@ -1,6 +1,7 @@
 from math import *
 from cmath import *
 
+
 class Res:
     value = None
     def __init__(self,value =None):
@@ -29,8 +30,11 @@ V1 = rect(14.1,radians(0))
 UC1 =  V1 *( Z2*Z3/(Z2+Z3))/((Z2*Z3/(Z2+Z3))+Z1)
 I1 = rect(1.41, pi/2)
 UC2 = I1 * Z2 * (Z1*Z3/(Z1+Z3))/((Z1*Z3/(Z1+Z3))+Z2)
+
+
 def polarprint(name,var):
-    print(name,hypot(var.real,var.imag),"/",degrees(atan2(var.imag,var.real)))
+    print(name,hypot(var.real, var.imag), "/", degrees(atan2(var.imag,var.real)))
+
 polarprint("UC1=",UC1)
 polarprint("UC2=",UC2)
 

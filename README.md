@@ -1,14 +1,24 @@
-# Bienvenidos a los ejemplos de Electrotecnia
+# Ejemplos programación en python (22.02 - Electrotecnia I)
 
-# Al final de esta clase usted podrá:
-* Graficar respuesta transitorias de un circuito
-* Graficar diagramas fasoriales
+## Propuestas de aplicaciones de python
+* Graficar respuesta transitoria de un circuito
+* Graficar diagramas fasoriales, manejo de números complejos
+* Resolver sistemas de N ecuaciones con N incognitas
 
-# Features for the future:
-* Resolver sistemas simbólicamente
+
+## Sugerencias de funcionalidades más avanzadas
+* Sobrecarga de operadores
+* Resolver sistemas de ecuaciones simbólicamente
+* Leer archivo de datos de LTspice
+* Leer archivo csv
+* Leer un archivo excel
+
+## Ejemplos que agregaremos en el futuro
+* Manejo de GUI
 * Graficar un diagrama de Bode
 
-## Autores
+
+## Alumnos ayudantes autores
 
 * **Ariel Nowik**
 * **Joaquín Mestanza**
