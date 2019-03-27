@@ -5,8 +5,9 @@
 -listas nativas
 -diccionarios nativos
 -todo es un objeto
+- import this!
 
-Filosofía de python 
+FilosofÃ­a de python 
 "hacer todo de una sola forma"
 
 Link donde se pueden ver cosas para hacer operaciones
