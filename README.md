@@ -13,7 +13,7 @@
 
 ## Sugerencias de funcionalidades más avanzadas
 * Sobrecarga de operadores
-> [Ejemplo sobrecarga](https://github.com/newtonis/EjemplosElectrotecnia/tree/master/ejemplo4_sobrecarga_operadores)
+> [Ejemplo sobrecarga](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/ejemplo4_sobrecarga_operadores/sobrecarga.py)
 * Resolver sistemas de ecuaciones simbólicamente
 > [Ejemplo sistema simbolico](https://github.com/newtonis/EjemplosElectrotecnia/tree/master/ejemplo5_sistema_simbolico)
 * Leer archivo de datos de LTspice
