@@ -41,11 +41,12 @@ sf = -v * conj(i)
 
 ax = plt.subplot(111, projection='polar')
 
-print("sr = ", printComplex(sr))
-print("sl = ", printComplex(sl))
-print("sc = ", printComplex(sc))
-print("sf = ", printComplex(sf))
-print("stotal = ", printComplex(sr + sl + sc + sf))
+k = 1e3
+print("sr = ", printComplex(sr/k), " kWatt +jkVAR")
+print("sl = ", printComplex(sl/k), " kWatt +jkVAR")
+print("sc = ", printComplex(sc/k), " kWatt +jkVAR")
+print("sf = ", printComplex(sf/k), " kWatt +jkVAR")
+print("stotal = ", printComplex(sr + sl + sc + sf), " kWatt +jkVAR")
 
 ## Dibuajamos los fasores con funciones de plotFasor.py (en la misma carpeta)
 

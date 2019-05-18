@@ -22,8 +22,8 @@ i1 = ifuente * z2 / (z1 + z2)
 i2 = ifuente * z1 / (z1 + z2)
 
 ## corrientes complejas
-print("i1 = ", printComplex(i1))
-print("i2 = ", printComplex(i2))
+print("i1 = ", printComplex(i1), "A")
+print("i2 = ", printComplex(i2), "A")
 
 ## cuenterio
 vfuente = -ifuente * (paralell(r1 + zl, r2 + zc) + 2)
@@ -57,14 +57,14 @@ drawLine(sl, "c", "L")
 drawLine(sc, "m", "C")
 drawLine(sfuente, "y", "F")
 
-print("sr0 = ", printComplex(sr0))
-print("sr1 = ", printComplex(sr1))
-print("sr2 = ", printComplex(sr2))
-print("s1 = ", printComplex(sl))
-print("sc = ", printComplex(sc))
-print("sfuente = ", printComplex(sfuente))
+print("sr0 = ", printComplex(sr0), " Watt +jVAR")
+print("sr1 = ", printComplex(sr1), " Watt +jVAR")
+print("sr2 = ", printComplex(sr2), " Watt +jVAR")
+print("s1 = ", printComplex(sl), " Watt +jVAR")
+print("sc = ", printComplex(sc), " Watt +jVAR")
+print("sfuente = ", printComplex(sfuente), " Watt +jVAR")
 
-print("ptotal = ", printComplex(sr0 + sr1 + sr2 + sl + sc + sfuente))
+print("ptotal = ", printComplex(sr0 + sr1 + sr2 + sl + sc + sfuente), " Watt +jVAR")
 
 ax.grid(True)
 ax.set_title("Potencias complejas (kW + jkVAR = kVA)", va='bottom')

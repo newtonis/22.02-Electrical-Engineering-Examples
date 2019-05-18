@@ -1,0 +1,34 @@
+
+ej 1
+i =  12.3 < -26.57°
+sr =  2.42 < 0.0°  kWatt +jkVAR
+sl =  3.02 < 90.0°  kWatt +jkVAR
+sc =  1.82 < -90.0°  kWatt +jkVAR
+sf =  2.71 < -153.43°  kWatt +jkVAR
+stotal =  0.0 < 0.0°  kWatt +jkVAR
+
+ej 2
+i1 =  4.47 < -26.57° A
+i2 =  2.24 < 63.43° A
+sr0 =  50 < 0.0°  Watt +jVAR
+sr1 =  20.0 < 0.0°  Watt +jVAR
+sr2 =  10.0 < 0.0°  Watt +jVAR
+s1 =  20.0 < 90.0°  Watt +jVAR
+sc =  10.0 < -90.0°  Watt +jVAR
+sfuente =  80.62 < -172.87°  Watt +jVAR
+stotal =  0.0 < 0.0°  Watt +jVAR
+
+
+ej 5
+
+s fuente i =  1.08 < -87.88°  kWatt +jkVAR
+s fuente v =  8.64 < -146.63°  kWatt +jkVAR
+s cap =  1.0 < -90.0°  kWatt +jkVAR
+s bob =  2.31 < 90.0°  kWatt +jkVAR
+s r5 =  2.34 < 0.0°  kWatt +jkVAR
+s r10 =  4.84 < 0.0°  kWatt +jkVAR
+s total =  0.0 < 0.0°  kWatt +jkVAR
+
+
+ej 6
+i =  365.66 < -14.16° A

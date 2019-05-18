@@ -68,12 +68,14 @@ pbob = vbob * conj(ibob)
 pr5 = vr5 * conj(ir5)
 pr10 = vr10 * conj(ir10)
 
+k = 1e3
+
 print(pfuente_i + pfuente_v + pcap + pbob + pr5 + pr10)
 
-print("s fuente i = ", printComplex(pfuente_i), " kWatt +jVAR")
-print("s fuente v = ", printComplex(pfuente_v), " kWatt +jVAR")
-print("s cap = ", printComplex(pcap), " kWatt +jVAR")
-print("s bob = ", printComplex(pbob), " kWatt +jVAR")
-print("s r5 = ", printComplex(pr5), " kWatt +jVAR")
-print("s r10 = ",printComplex(pr10), " kWatt +jVAR")
+print("s fuente i = ", printComplex(pfuente_i/k), " kWatt +jkVAR")
+print("s fuente v = ", printComplex(pfuente_v/k), " kWatt +jkVAR")
+print("s cap = ", printComplex(pcap/k), " kWatt +jkVAR")
+print("s bob = ", printComplex(pbob/k), " kWatt +jkVAR")
+print("s r5 = ", printComplex(pr5/k), " kWatt +jkVAR")
+print("s r10 = ",printComplex(pr10/k), " kWatt +jkVAR")
 
