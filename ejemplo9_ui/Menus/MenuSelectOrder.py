@@ -1,5 +1,7 @@
 import tkinter as tk
 import Config
+from UserInput import userInput
+
 from Menus.MenuPrimerOrden import MenuPrimerOrden
 
 
@@ -24,29 +26,30 @@ class MenuSelectOrder(tk.Frame):
         self.button1order = tk.Button(
             self,
             height=3,
-            width=50,
+            width=30,
             text="Filtro de 1er orden",
             font=Config.SMALL_FONT,
             background="#ccffd5",
             command=self.boton1OrdenPresionado
 
         )
-        self.button1order.pack(side=tk.TOP, expand=1, fill=tk.BOTH, pady=30)
+        self.button1order.pack(side=tk.TOP, expand=1, fill=tk.BOTH, pady=100)
 
         self.button2order = tk.Button(
             self,
             height=3,
-            width=50,
+            width=30,
             text="Filtro de 2do orden",
             font=Config.SMALL_FONT,
             background="#ccffd5",
-            command=self.boton1OrdenPresionado
+            command=self.boton2OrdenPresionado
         )
 
-        self.button2order.pack(side=tk.TOP, expand=1, fill=tk.BOTH, pady=30)
+        self.button2order.pack(side=tk.TOP, expand=1, fill=tk.BOTH, pady=100)
 
     def boton1OrdenPresionado(self):
         self.controller.showFrame(MenuPrimerOrden)
+        userInput["order"] = "1er orden"
 
     def boton2OrdenPresionado(self):
         pass

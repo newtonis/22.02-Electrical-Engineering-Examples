@@ -3,12 +3,16 @@ from tkinter import *
 from Menus.MenuSelectOrder import MenuSelectOrder
 from Menus.MenuPrimerOrden import MenuPrimerOrden
 from Menus.MenuPasaBajos import MenuPasaBajos
+from Menus.MenuModo import MenuModo
+from Menus.MenuInputOutput import MenuInputOutput
 
 
 frames = [
     MenuSelectOrder,
     MenuPrimerOrden,
-    MenuPasaBajos
+    MenuPasaBajos,
+    MenuModo,
+    MenuInputOutput
 ]
 
 startFrame = MenuSelectOrder
@@ -21,7 +25,8 @@ class UI(tk.Tk):
         self.protocol('WM_DELETE_WINDOW', self.exitFunction)
         self.title("Ejemplo gui 01")
         self.resizable(width=False, height=False)
-        self.minsize(width=600, height=400)
+        self.minsize(width=700, height=500)
+        #self.maxsize(width=800, height=400)
 
         self.container = tk.Frame(self)
         self.container.pack(side="top", fill="both", expand=True)

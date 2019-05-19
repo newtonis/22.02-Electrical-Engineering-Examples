@@ -1,6 +1,7 @@
 import tkinter as tk
 import Config
-
+from UserInput import userInput
+from Menus.MenuModo import MenuModo
 
 class MenuPasaBajos(tk.Frame):
     def __init__(self, parent, controller):
@@ -19,20 +20,6 @@ class MenuPasaBajos(tk.Frame):
         )
 
         self.title.pack(side=tk.TOP, fill=tk.BOTH)
-
-        self.titlePsi = tk.Label(
-            self,
-            height=1,
-            width=50,
-            text="Epsilon",
-            font=Config.SMALL_FONT,
-            background="#ccffd5"
-        )
-
-        self.titlePsi.pack(side=tk.TOP, fill=tk.BOTH, pady=30)
-
-        self.w1 = tk.Scale(self, from_=0, to=1, resolution = 0.01, orient=tk.HORIZONTAL)
-        self.w1.pack(side=tk.TOP, fill=tk.BOTH)
 
         self.titleFo = tk.Label(
             self,
@@ -61,7 +48,9 @@ class MenuPasaBajos(tk.Frame):
         self.buttonContinuar.pack(side=tk.TOP, fill=tk.BOTH, pady=20)
 
     def continuar(self):
-        pass
+        # configuramos modos
+        userInput["f0"] = self.w2.get() * 1000
+        self.controller.showFrame(MenuModo)
 
     def focus(self):
         pass

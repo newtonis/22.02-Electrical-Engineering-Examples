@@ -1,7 +1,7 @@
 import tkinter as tk
 import Config
 from Menus.MenuPasaBajos import MenuPasaBajos
-
+from UserInput import userInput
 
 class MenuPrimerOrden(tk.Frame):
     def __init__(self, parent, controller):
@@ -35,6 +35,7 @@ class MenuPrimerOrden(tk.Frame):
 
     def gotoMenuPasaBajos(self):
         self.controller.showFrame(MenuPasaBajos)
+        userInput["mode"] = "pasa bajos"
 
     def focus(self):
         pass
