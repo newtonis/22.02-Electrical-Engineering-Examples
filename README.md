@@ -1,17 +1,15 @@
 # Programación en python (22.02 - Electrotecnia I)
 
 ## Propuestas de aplicaciones de python
-* Resolución de sistemas de N ecuaciones con N incognitas
 * Graficar respuesta transitoria de un circuito 
 
 > [Ejemplo circuito rc](ejemplo1_rc/ejemplo1_rc.py)<br/>
-[Ejemplo circuito sobreamortiguado](ejemplo2_sobreamortiguado/ejemplo2_sobreamortiguado.py)
+> [Ejemplo circuito sobreamortiguado](ejemplo2_sobreamortiguado/ejemplo2_sobreamortiguado.py)
 
 * Graficar diagramas fasoriales, manejo de números complejos
 >  [Ejemplo alterna 1](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/ejemplo3_fasores/ej1.py) <br/>
-[Ejercicio alterna 2](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/ejemplo3_fasores/ej2.py)
+> [Ejercicio alterna 2](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/ejemplo3_fasores/ej2.py)
 
-## Sugerencias de funcionalidades más avanzadas
 * Sobrecarga de operadores
 > [Ejemplo sobrecarga](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/ejemplo4_sobrecarga_operadores/sobrecarga.py)
 * Resolver sistemas de ecuaciones simbólicamente
@@ -23,7 +21,7 @@
 * Leer un archivo excel
 > [Ejemplo lectura excel](https://github.com/newtonis/EjemplosElectrotecnia/tree/master/ejemplo8_leer_excel)
 * Armado de una interfaz gráfica (GUI)
-> [Manejo de GUI](https://github.com/newtonis/EjemplosElectrotecnia/tree/master/ejemplo9_ui)
+> [Ejemplo manejo de GUI](https://github.com/newtonis/EjemplosElectrotecnia/tree/master/ejemplo9_ui)
 
 ## Material didactico
 * [Mini-apunte de GUI](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/material_didactico/tkinter_trucos.pdf)
