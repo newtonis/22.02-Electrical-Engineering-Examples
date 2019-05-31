@@ -1,4 +1,4 @@
-# Ejemplos programación en python (22.02 - Electrotecnia I)
+# Programación en python (22.02 - Electrotecnia I)
 
 ## Propuestas de aplicaciones de python
 * Resolución de sistemas de N ecuaciones con N incognitas
@@ -22,11 +22,12 @@
 > [Ejemplo lectura .csv](https://github.com/newtonis/EjemplosElectrotecnia/tree/master/ejemplo6_leer_spice)
 * Leer un archivo excel
 > [Ejemplo lectura excel](https://github.com/newtonis/EjemplosElectrotecnia/tree/master/ejemplo8_leer_excel)
+* Armado de una interfaz gráfica (GUI)
+> [Manejo de GUI](https://github.com/newtonis/EjemplosElectrotecnia/tree/master/ejemplo9_ui)
 
-## Ejemplos que agregaremos en el futuro
-* Manejo de GUI
-* Graficar un diagrama de Bode
-
+## Material didactico
+* [Mini-apunte de GUI](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/material_didactico/tkinter_trucos.pdf)
+* [Mini-apunte de filtros](https://github.com/newtonis/EjemplosElectrotecnia/blob/master/material_didactico/cheat_sheet_filtros.pdf)
 
 ## Alumnos ayudantes autores
 
