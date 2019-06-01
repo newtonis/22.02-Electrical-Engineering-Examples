@@ -5,13 +5,19 @@ from UserInput import userInput
 from Menus.MenuPrimerOrden import MenuPrimerOrden
 
 
-class MenuSelectOrder(tk.Frame):
+class MenuSelectOrder(tk.Frame):  # heredamos de tk.Frame, padre de MenuPrimerOrden
     def __init__(self, parent, controller):
+        # parent representa el Frame principal del programa, tenemos que indicarle
+        # cuando MenuInputOutput será dibujado
+
+        # controller lo utilizamos cuando necesitamos que el controlador principal del programa haga algo
+
         tk.Frame.__init__(self, parent)
 
         self.controller = controller
         self.parent = parent
 
+        # creamos widgets y los agregamos a la pantalla con pack
         self.title = tk.Label(
             self,
             height=1,

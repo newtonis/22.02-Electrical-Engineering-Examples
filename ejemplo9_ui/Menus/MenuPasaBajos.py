@@ -3,8 +3,15 @@ import Config
 from UserInput import userInput
 from Menus.MenuModo import MenuModo
 
-class MenuPasaBajos(tk.Frame):
+
+class MenuPasaBajos(tk.Frame): # heredamos de tk.Frame, padre de MenuPasaBajos
     def __init__(self, parent, controller):
+        # parent representa el Frame principal del programa, tenemos que indicarle
+        # cuando MenuInputOutput será dibujado
+
+        # controller lo utilizamos cuando necesitamos que el controlador principal del programa haga algo
+
+        # llamamos al constructor
         tk.Frame.__init__(self, parent)
 
         self.controller = controller

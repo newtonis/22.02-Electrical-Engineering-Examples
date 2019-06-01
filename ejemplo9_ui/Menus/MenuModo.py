@@ -5,13 +5,19 @@ from UserInput import userInput
 import numpy as np
 
 
-class MenuModo(tk.Frame):
+class MenuModo(tk.Frame):  # heredamos de tk.Frame, padre de MenuModo
     def __init__(self, parent, controller):
+        # parent representa el Frame principal del programa, tenemos que indicarle
+        # cuando MenuInputOutput será dibujado
+
+        # controller lo utilizamos cuando necesitamos que el controlador principal del programa haga algo
+
+        # llamamos al constructor
         tk.Frame.__init__(self, parent)
 
         self.controller = controller
         self.parent = parent
-
+        # agregamos un boton y un titulo
         self.title = tk.Label(
             self,
             height=1,
@@ -45,16 +51,18 @@ class MenuModo(tk.Frame):
         period = 1 / freq
         periodSamples = int(period / paso)
 
-        cuadrada = np.where(np.arange(N) % periodSamples < periodSamples/2,-0.5,0.5)
+        # este codigo genera una señal cuadrada,
+        cuadrada = np.where(np.arange(N) % periodSamples < periodSamples/2, -0.5, 0.5)
 
+        # para que la señal no empiece de golpe y visualmente se vea mejor su comienzo
         for i in range(2 * periodSamples):
             cuadrada[i] = 0
 
-
-
+        # cargamos a la memoria la entrada seleccionada. Esta información será utilizada
+        # por MenuInputOutput
         userInput["input"] = {
             "y": cuadrada,
             "t": t
         }
-
+        # cambiamos el frame que esta actualmente abierto
         self.controller.showFrame(MenuInputOutput)

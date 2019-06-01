@@ -10,8 +10,15 @@ import matplotlib.pyplot as plt
 from scipy import signal
 from numpy import pi
 
-class MenuInputOutput(tk.Frame):
+
+class MenuInputOutput(tk.Frame):  # heredamos de tk.Frame, padre de MenuInputOutput
     def __init__(self, parent, controller):
+        # parent representa el Frame principal del programa, tenemos que indicarle
+        # cuando MenuInputOutput será dibujado
+
+        # controller lo utilizamos cuando necesitamos que el controlador principal del programa haga algo
+
+        # llamamos al constructor del padre de MenuInputOutput, que es tk.Frame
         tk.Frame.__init__(self, parent)
 
         self.controller = controller
@@ -25,25 +32,20 @@ class MenuInputOutput(tk.Frame):
             font=Config.LARGE_FONT,
             background="#ffccd5"
         )
-
+        # con pack provocamos que los widgets se dibujen efectivamente en la pantalla
         self.title.pack(side=tk.TOP, fill=tk.BOTH)
-
+        # creamos el canvas
         self.graph = Canvas(self)
-
-        #self.fig, self.axis = plt.subplots()
+        # creamos figura y ejes del gráfico de maplotlib
         self.fig, (self.ax1, self.ax2) = plt.subplots(nrows=2, sharex=True)
-
+        # Estos dos objetos dataPlot y nav son el puente entre maplotlib y tkinter
         self.dataPlot = FigureCanvasTkAgg(self.fig, master=self.graph)
-        # self.dataPlot.draw(self)
-
         self.nav = NavigationToolbar2Tk(self.dataPlot, self.graph)
-
         self.dataPlot.get_tk_widget().pack(side=TOP, fill=BOTH, expand=1)
-
         self.dataPlot._tkcanvas.pack(side=BOTTOM, fill=X, expand=1)
 
         self.graph.pack(side=TOP, expand=1, fill=BOTH)
-
+        # boton para volver
         self.backButton = tk.Button(
             self,
             height=2,
@@ -59,12 +61,13 @@ class MenuInputOutput(tk.Frame):
         self.ax1.clear()
 
         # calcuamos gráficos acorde a la configuracion seleccionada
-
+        # userInput tiene la información que fue insertada en el Frame anterior
         self.ax1.plot(userInput["input"]["t"], userInput["input"]["y"])
         self.ax1.minorticks_on()
         self.ax1.grid(which='major', linestyle='-', linewidth=0.3, color='black')
         self.ax1.grid(which='minor', linestyle=':', linewidth=0.1, color='black')
 
+        # Aca cambiaría la configuración según lo que se configuró en el frame anterior
         if userInput["order"] == "1er orden":
             if userInput["mode"] == "pasa bajos":
                 self.plotPasaBajos1erOrden()
